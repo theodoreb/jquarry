@@ -8,7 +8,7 @@ var MockBrowser = require('mock-browser').mocks.MockBrowser;
 var vm = require('vm');
 var _ = require('underscore');
 
-var jqueryDepsOrder = require('../lib/jquery-deps-order');
+var jqueryDepsOrder = require('../lib/jquery/module-deps-order');
 
 var jqueryModulesApiFile = './dist/jquery-modules-api.json';
 var jqueryFolder = './node_modules/jquery/src/';
