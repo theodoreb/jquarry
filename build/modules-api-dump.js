@@ -133,7 +133,7 @@ function getMethods(file) {
     newMethods.push({module: module, object: 'jQuery.fn', method: method});
   });
   _.difference(newjQueryexpr, curjQueryexpr).forEach(function (method) {
-    newMethods.push({module: module, object: 'jQuery.expr.filters', method: method});
+    newMethods.push({module: module, object: 'jQuery.expr.filters', method: ':' + method});
   });
 
   debug(module + ': ' + _.pluck(newMethods, 'method'));
@@ -154,5 +154,9 @@ function processjQuerySource(er, files) {
 runFile('core', 'core.js');
 runFile('sizzle', 'sizzle/dist/sizzle.js');
 runFile('selector', 'selector-sizzle.js');
+// Expose Sizzle selectors.
+_.keys(mockWindow.jQuery.expr.filters).forEach(function (method) {
+  jQueryMethods.push({module: 'sizzle', object: 'jQuery.expr.filters', method: ':' + method});
+});
 
 glob("**/*.js", globOpts, processjQuerySource);

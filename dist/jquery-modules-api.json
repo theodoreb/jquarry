@@ -1,5 +1,165 @@
 [
   {
+    "module": "sizzle",
+    "object": "jQuery.expr.filters",
+    "method": ":not"
+  },
+  {
+    "module": "sizzle",
+    "object": "jQuery.expr.filters",
+    "method": ":has"
+  },
+  {
+    "module": "sizzle",
+    "object": "jQuery.expr.filters",
+    "method": ":contains"
+  },
+  {
+    "module": "sizzle",
+    "object": "jQuery.expr.filters",
+    "method": ":lang"
+  },
+  {
+    "module": "sizzle",
+    "object": "jQuery.expr.filters",
+    "method": ":target"
+  },
+  {
+    "module": "sizzle",
+    "object": "jQuery.expr.filters",
+    "method": ":root"
+  },
+  {
+    "module": "sizzle",
+    "object": "jQuery.expr.filters",
+    "method": ":focus"
+  },
+  {
+    "module": "sizzle",
+    "object": "jQuery.expr.filters",
+    "method": ":enabled"
+  },
+  {
+    "module": "sizzle",
+    "object": "jQuery.expr.filters",
+    "method": ":disabled"
+  },
+  {
+    "module": "sizzle",
+    "object": "jQuery.expr.filters",
+    "method": ":checked"
+  },
+  {
+    "module": "sizzle",
+    "object": "jQuery.expr.filters",
+    "method": ":selected"
+  },
+  {
+    "module": "sizzle",
+    "object": "jQuery.expr.filters",
+    "method": ":empty"
+  },
+  {
+    "module": "sizzle",
+    "object": "jQuery.expr.filters",
+    "method": ":parent"
+  },
+  {
+    "module": "sizzle",
+    "object": "jQuery.expr.filters",
+    "method": ":header"
+  },
+  {
+    "module": "sizzle",
+    "object": "jQuery.expr.filters",
+    "method": ":input"
+  },
+  {
+    "module": "sizzle",
+    "object": "jQuery.expr.filters",
+    "method": ":button"
+  },
+  {
+    "module": "sizzle",
+    "object": "jQuery.expr.filters",
+    "method": ":text"
+  },
+  {
+    "module": "sizzle",
+    "object": "jQuery.expr.filters",
+    "method": ":first"
+  },
+  {
+    "module": "sizzle",
+    "object": "jQuery.expr.filters",
+    "method": ":last"
+  },
+  {
+    "module": "sizzle",
+    "object": "jQuery.expr.filters",
+    "method": ":eq"
+  },
+  {
+    "module": "sizzle",
+    "object": "jQuery.expr.filters",
+    "method": ":even"
+  },
+  {
+    "module": "sizzle",
+    "object": "jQuery.expr.filters",
+    "method": ":odd"
+  },
+  {
+    "module": "sizzle",
+    "object": "jQuery.expr.filters",
+    "method": ":lt"
+  },
+  {
+    "module": "sizzle",
+    "object": "jQuery.expr.filters",
+    "method": ":gt"
+  },
+  {
+    "module": "sizzle",
+    "object": "jQuery.expr.filters",
+    "method": ":nth"
+  },
+  {
+    "module": "sizzle",
+    "object": "jQuery.expr.filters",
+    "method": ":radio"
+  },
+  {
+    "module": "sizzle",
+    "object": "jQuery.expr.filters",
+    "method": ":checkbox"
+  },
+  {
+    "module": "sizzle",
+    "object": "jQuery.expr.filters",
+    "method": ":file"
+  },
+  {
+    "module": "sizzle",
+    "object": "jQuery.expr.filters",
+    "method": ":password"
+  },
+  {
+    "module": "sizzle",
+    "object": "jQuery.expr.filters",
+    "method": ":image"
+  },
+  {
+    "module": "sizzle",
+    "object": "jQuery.expr.filters",
+    "method": ":submit"
+  },
+  {
+    "module": "sizzle",
+    "object": "jQuery.expr.filters",
+    "method": ":reset"
+  },
+  {
     "module": "ajax/parseJSON",
     "object": "jQuery",
     "method": "parseJSON"
@@ -42,12 +202,12 @@
   {
     "module": "css/hiddenVisibleSelectors",
     "object": "jQuery.expr.filters",
-    "method": "hidden"
+    "method": ":hidden"
   },
   {
     "module": "css/hiddenVisibleSelectors",
     "object": "jQuery.expr.filters",
-    "method": "visible"
+    "method": ":visible"
   },
   {
     "module": "css/swap",
@@ -917,7 +1077,7 @@
   {
     "module": "effects/animatedSelector",
     "object": "jQuery.expr.filters",
-    "method": "animated"
+    "method": ":animated"
   },
   {
     "module": "queue/delay",
