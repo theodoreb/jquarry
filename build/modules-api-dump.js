@@ -138,7 +138,6 @@ function getMethods(file) {
 
   debug(module + ': ' + _.pluck(newMethods, 'method'));
   jQueryMethods = jQueryMethods.concat(newMethods);
-  return jQueryMethods;
 }
 
 
