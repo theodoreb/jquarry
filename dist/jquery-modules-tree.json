@@ -1,0 +1,396 @@
+{
+  "ajax": [
+    "core",
+    "var/rnotwhite",
+    "ajax/var/nonce",
+    "ajax/var/rquery",
+    "core/init",
+    "ajax/parseJSON",
+    "ajax/parseXML",
+    "deferred"
+  ],
+  "ajax/jsonp": [
+    "core",
+    "var/nonce",
+    "var/rquery",
+    "ajax"
+  ],
+  "ajax/load": [
+    "core",
+    "core/parseHTML",
+    "ajax",
+    "traversing",
+    "manipulation",
+    "selector",
+    "event/alias"
+  ],
+  "ajax/parseJSON": [
+    "core"
+  ],
+  "ajax/parseXML": [
+    "core"
+  ],
+  "ajax/script": [
+    "core",
+    "ajax"
+  ],
+  "ajax/var/nonce": [
+    "core"
+  ],
+  "ajax/var/rquery": [],
+  "ajax/xhr": [
+    "core",
+    "var/support",
+    "ajax"
+  ],
+  "attributes": [
+    "core",
+    "attributes/attr",
+    "attributes/prop",
+    "attributes/classes",
+    "attributes/val"
+  ],
+  "attributes/attr": [
+    "core",
+    "var/rnotwhite",
+    "var/strundefined",
+    "core/access",
+    "support",
+    "selector"
+  ],
+  "attributes/classes": [
+    "core",
+    "var/rnotwhite",
+    "var/strundefined",
+    "data/var/data_priv",
+    "core/init"
+  ],
+  "attributes/prop": [
+    "core",
+    "core/access",
+    "support"
+  ],
+  "attributes/support": [
+    "var/support"
+  ],
+  "attributes/val": [
+    "core",
+    "support",
+    "core/init"
+  ],
+  "callbacks": [
+    "core",
+    "var/rnotwhite"
+  ],
+  "core": [
+    "var/arr",
+    "var/slice",
+    "var/concat",
+    "var/push",
+    "var/indexOf",
+    "var/class2type",
+    "var/toString",
+    "var/hasOwn",
+    "var/support"
+  ],
+  "core/access": [
+    "core"
+  ],
+  "core/init": [
+    "core",
+    "var/rsingleTag",
+    "traversing/findFilter"
+  ],
+  "core/parseHTML": [
+    "core",
+    "var/rsingleTag",
+    "manipulation"
+  ],
+  "core/ready": [
+    "core",
+    "core/init",
+    "deferred"
+  ],
+  "core/var/rsingleTag": [],
+  "css": [
+    "core",
+    "var/pnum",
+    "core/access",
+    "css/var/rmargin",
+    "css/var/rnumnonpx",
+    "css/var/cssExpand",
+    "css/var/isHidden",
+    "css/var/getStyles",
+    "css/curCSS",
+    "css/defaultDisplay",
+    "css/addGetHookIf",
+    "css/support",
+    "data/var/data_priv",
+    "core/init",
+    "css/swap",
+    "core/ready",
+    "selector"
+  ],
+  "css/addGetHookIf": [],
+  "css/curCSS": [
+    "core",
+    "var/rnumnonpx",
+    "var/rmargin",
+    "var/getStyles",
+    "selector"
+  ],
+  "css/defaultDisplay": [
+    "core",
+    "manipulation"
+  ],
+  "css/hiddenVisibleSelectors": [
+    "core",
+    "selector"
+  ],
+  "css/support": [
+    "core",
+    "var/support"
+  ],
+  "css/swap": [
+    "core"
+  ],
+  "css/var/cssExpand": [],
+  "css/var/getStyles": [],
+  "css/var/isHidden": [
+    "core",
+    "selector"
+  ],
+  "css/var/rmargin": [],
+  "css/var/rnumnonpx": [
+    "var/pnum"
+  ],
+  "data": [
+    "core",
+    "var/rnotwhite",
+    "core/access",
+    "data/var/data_priv",
+    "data/var/data_user"
+  ],
+  "data/Data": [
+    "core",
+    "var/rnotwhite",
+    "accepts"
+  ],
+  "data/accepts": [
+    "core"
+  ],
+  "data/var/data_priv": [
+    "data/Data"
+  ],
+  "data/var/data_user": [
+    "data/Data"
+  ],
+  "deferred": [
+    "core",
+    "var/slice",
+    "callbacks"
+  ],
+  "deprecated": [
+    "core",
+    "traversing"
+  ],
+  "dimensions": [
+    "core",
+    "core/access",
+    "css"
+  ],
+  "effects": [
+    "core",
+    "var/pnum",
+    "css/var/cssExpand",
+    "css/var/isHidden",
+    "css/defaultDisplay",
+    "data/var/data_priv",
+    "core/init",
+    "effects/Tween",
+    "queue",
+    "css",
+    "deferred",
+    "traversing"
+  ],
+  "effects/Tween": [
+    "core",
+    "css"
+  ],
+  "effects/animatedSelector": [
+    "core",
+    "selector",
+    "effects"
+  ],
+  "event": [
+    "core",
+    "var/strundefined",
+    "var/rnotwhite",
+    "var/hasOwn",
+    "var/slice",
+    "event/support",
+    "data/var/data_priv",
+    "core/init",
+    "data/accepts",
+    "selector"
+  ],
+  "event/ajax": [
+    "core",
+    "event"
+  ],
+  "event/alias": [
+    "core",
+    "event"
+  ],
+  "event/support": [
+    "var/support"
+  ],
+  "exports/amd": [
+    "core"
+  ],
+  "exports/global": [
+    "core",
+    "var/strundefined"
+  ],
+  "jquery": [
+    "core",
+    "selector",
+    "traversing",
+    "callbacks",
+    "deferred",
+    "core/ready",
+    "data",
+    "queue",
+    "queue/delay",
+    "attributes",
+    "event",
+    "event/alias",
+    "manipulation",
+    "manipulation/_evalUrl",
+    "wrap",
+    "css",
+    "css/hiddenVisibleSelectors",
+    "serialize",
+    "ajax",
+    "ajax/xhr",
+    "ajax/script",
+    "ajax/jsonp",
+    "ajax/load",
+    "event/ajax",
+    "effects",
+    "effects/animatedSelector",
+    "offset",
+    "dimensions",
+    "deprecated",
+    "exports/amd",
+    "exports/global"
+  ],
+  "manipulation": [
+    "core",
+    "var/concat",
+    "var/push",
+    "core/access",
+    "manipulation/var/rcheckableType",
+    "manipulation/support",
+    "data/var/data_priv",
+    "data/var/data_user",
+    "core/init",
+    "data/accepts",
+    "traversing",
+    "selector",
+    "event"
+  ],
+  "manipulation/_evalUrl": [
+    "ajax"
+  ],
+  "manipulation/support": [
+    "var/support"
+  ],
+  "manipulation/var/rcheckableType": [],
+  "offset": [
+    "core",
+    "var/strundefined",
+    "core/access",
+    "css/var/rnumnonpx",
+    "css/curCSS",
+    "css/addGetHookIf",
+    "css/support",
+    "core/init",
+    "css",
+    "selector"
+  ],
+  "queue": [
+    "core",
+    "data/var/data_priv",
+    "deferred",
+    "callbacks"
+  ],
+  "queue/delay": [
+    "core",
+    "queue",
+    "effects"
+  ],
+  "selector-native": [
+    "core"
+  ],
+  "selector-sizzle": [
+    "core",
+    "sizzle"
+  ],
+  "selector": [],
+  "serialize": [
+    "core",
+    "manipulation/var/rcheckableType",
+    "core/init",
+    "traversing",
+    "attributes/prop"
+  ],
+  "traversing": [
+    "core",
+    "var/indexOf",
+    "traversing/var/rneedsContext",
+    "core/init",
+    "traversing/findFilter",
+    "selector"
+  ],
+  "traversing/findFilter": [
+    "core",
+    "var/indexOf",
+    "var/rneedsContext",
+    "selector"
+  ],
+  "traversing/var/rneedsContext": [
+    "core",
+    "selector"
+  ],
+  "var/arr": [],
+  "var/class2type": [],
+  "var/concat": [
+    "arr"
+  ],
+  "var/hasOwn": [
+    "class2type"
+  ],
+  "var/indexOf": [
+    "arr"
+  ],
+  "var/pnum": [],
+  "var/push": [
+    "arr"
+  ],
+  "var/rnotwhite": [],
+  "var/slice": [
+    "arr"
+  ],
+  "var/strundefined": [],
+  "var/support": [],
+  "var/toString": [
+    "class2type"
+  ],
+  "wrap": [
+    "core",
+    "core/init",
+    "manipulation",
+    "traversing"
+  ]
+}

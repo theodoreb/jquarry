@@ -141,15 +141,6 @@ function getMethods(file) {
 }
 
 
-function processjQuerySource(er, files) {
-  // Check dependencies and load the files in an order that won't mess things up.
-  jqueryDepsOrder(files, {folder: jqueryFolder}).forEach(getMethods);
-
-  debug('Writting file with ' + jQueryMethods.length + ' methods.');
-  fs.writeFile(jqueryModulesApiFile, JSON.stringify(jQueryMethods, null, 2));
-}
-
-
 // Fill jQuery object with bare minimum things. We won't check usage for those.
 runFile('core', 'core.js');
 runFile('sizzle', 'sizzle/dist/sizzle.js');
@@ -159,4 +150,22 @@ _.keys(mockWindow.jQuery.expr.filters).forEach(function (method) {
   jQueryMethods.push({module: 'sizzle', object: 'jQuery.expr.filters', method: ':' + method});
 });
 
-glob("**/*.js", globOpts, processjQuerySource);
+// Export api infos.
+glob("**/*.js", globOpts, function (er, files) {
+  // Check dependencies and load the files in an order that won't mess things up.
+  jqueryDepsOrder(files, {folder: jqueryFolder}).forEach(getMethods);
+
+  debug('Writting file with ' + jQueryMethods.length + ' methods.');
+  fs.writeFile(jqueryModulesApiFile, JSON.stringify(jQueryMethods, null, 2));
+});
+
+// Export dependencies.
+glob("**/*.js", {cwd: jqueryFolder, ignore: [
+  'sizzle/**/*.js',
+  'intro.js',
+  'outro.js'
+]}, function (er, files) {
+  var tree = jqueryDepsOrder.tree(files, {folder: jqueryFolder});
+  debug('Writting tree dependency file.');
+  fs.writeFile(jqueryModulesApiFile.replace('api', 'tree'), JSON.stringify(tree, null, 2));
+});
