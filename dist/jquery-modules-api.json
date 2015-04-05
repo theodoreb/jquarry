@@ -1,0 +1,947 @@
+[
+  {
+    "module": "ajax/parseJSON",
+    "object": "jQuery",
+    "method": "parseJSON"
+  },
+  {
+    "module": "ajax/parseXML",
+    "object": "jQuery",
+    "method": "parseXML"
+  },
+  {
+    "module": "callbacks",
+    "object": "jQuery",
+    "method": "Callbacks"
+  },
+  {
+    "module": "core/access",
+    "object": "jQuery",
+    "method": "access"
+  },
+  {
+    "module": "attributes/attr",
+    "object": "jQuery",
+    "method": "attr"
+  },
+  {
+    "module": "attributes/attr",
+    "object": "jQuery",
+    "method": "removeAttr"
+  },
+  {
+    "module": "attributes/attr",
+    "object": "jQuery",
+    "method": "attrHooks"
+  },
+  {
+    "module": "attributes/attr",
+    "object": "jQuery.fn",
+    "method": "attr"
+  },
+  {
+    "module": "attributes/attr",
+    "object": "jQuery.fn",
+    "method": "removeAttr"
+  },
+  {
+    "module": "attributes/prop",
+    "object": "jQuery",
+    "method": "propFix"
+  },
+  {
+    "module": "attributes/prop",
+    "object": "jQuery",
+    "method": "prop"
+  },
+  {
+    "module": "attributes/prop",
+    "object": "jQuery",
+    "method": "propHooks"
+  },
+  {
+    "module": "attributes/prop",
+    "object": "jQuery.fn",
+    "method": "prop"
+  },
+  {
+    "module": "attributes/prop",
+    "object": "jQuery.fn",
+    "method": "removeProp"
+  },
+  {
+    "module": "css/swap",
+    "object": "jQuery",
+    "method": "swap"
+  },
+  {
+    "module": "data",
+    "object": "jQuery",
+    "method": "hasData"
+  },
+  {
+    "module": "data",
+    "object": "jQuery",
+    "method": "data"
+  },
+  {
+    "module": "data",
+    "object": "jQuery",
+    "method": "removeData"
+  },
+  {
+    "module": "data",
+    "object": "jQuery",
+    "method": "_data"
+  },
+  {
+    "module": "data",
+    "object": "jQuery",
+    "method": "_removeData"
+  },
+  {
+    "module": "data",
+    "object": "jQuery.fn",
+    "method": "data"
+  },
+  {
+    "module": "data",
+    "object": "jQuery.fn",
+    "method": "removeData"
+  },
+  {
+    "module": "data/accepts",
+    "object": "jQuery",
+    "method": "acceptData"
+  },
+  {
+    "module": "deferred",
+    "object": "jQuery",
+    "method": "Deferred"
+  },
+  {
+    "module": "deferred",
+    "object": "jQuery",
+    "method": "when"
+  },
+  {
+    "module": "exports/global",
+    "object": "jQuery",
+    "method": "noConflict"
+  },
+  {
+    "module": "queue",
+    "object": "jQuery",
+    "method": "queue"
+  },
+  {
+    "module": "queue",
+    "object": "jQuery",
+    "method": "dequeue"
+  },
+  {
+    "module": "queue",
+    "object": "jQuery",
+    "method": "_queueHooks"
+  },
+  {
+    "module": "queue",
+    "object": "jQuery.fn",
+    "method": "queue"
+  },
+  {
+    "module": "queue",
+    "object": "jQuery.fn",
+    "method": "dequeue"
+  },
+  {
+    "module": "queue",
+    "object": "jQuery.fn",
+    "method": "clearQueue"
+  },
+  {
+    "module": "queue",
+    "object": "jQuery.fn",
+    "method": "promise"
+  },
+  {
+    "module": "traversing/findFilter",
+    "object": "jQuery",
+    "method": "filter"
+  },
+  {
+    "module": "traversing/findFilter",
+    "object": "jQuery.fn",
+    "method": "find"
+  },
+  {
+    "module": "traversing/findFilter",
+    "object": "jQuery.fn",
+    "method": "filter"
+  },
+  {
+    "module": "traversing/findFilter",
+    "object": "jQuery.fn",
+    "method": "not"
+  },
+  {
+    "module": "traversing/findFilter",
+    "object": "jQuery.fn",
+    "method": "is"
+  },
+  {
+    "module": "core/init",
+    "object": "jQuery.fn",
+    "method": "init"
+  },
+  {
+    "module": "ajax",
+    "object": "jQuery",
+    "method": "active"
+  },
+  {
+    "module": "ajax",
+    "object": "jQuery",
+    "method": "lastModified"
+  },
+  {
+    "module": "ajax",
+    "object": "jQuery",
+    "method": "etag"
+  },
+  {
+    "module": "ajax",
+    "object": "jQuery",
+    "method": "ajaxSettings"
+  },
+  {
+    "module": "ajax",
+    "object": "jQuery",
+    "method": "ajaxSetup"
+  },
+  {
+    "module": "ajax",
+    "object": "jQuery",
+    "method": "ajaxPrefilter"
+  },
+  {
+    "module": "ajax",
+    "object": "jQuery",
+    "method": "ajaxTransport"
+  },
+  {
+    "module": "ajax",
+    "object": "jQuery",
+    "method": "ajax"
+  },
+  {
+    "module": "ajax",
+    "object": "jQuery",
+    "method": "getJSON"
+  },
+  {
+    "module": "ajax",
+    "object": "jQuery",
+    "method": "getScript"
+  },
+  {
+    "module": "ajax",
+    "object": "jQuery",
+    "method": "get"
+  },
+  {
+    "module": "ajax",
+    "object": "jQuery",
+    "method": "post"
+  },
+  {
+    "module": "manipulation/_evalUrl",
+    "object": "jQuery",
+    "method": "_evalUrl"
+  },
+  {
+    "module": "attributes/classes",
+    "object": "jQuery.fn",
+    "method": "addClass"
+  },
+  {
+    "module": "attributes/classes",
+    "object": "jQuery.fn",
+    "method": "removeClass"
+  },
+  {
+    "module": "attributes/classes",
+    "object": "jQuery.fn",
+    "method": "toggleClass"
+  },
+  {
+    "module": "attributes/classes",
+    "object": "jQuery.fn",
+    "method": "hasClass"
+  },
+  {
+    "module": "attributes/val",
+    "object": "jQuery",
+    "method": "valHooks"
+  },
+  {
+    "module": "attributes/val",
+    "object": "jQuery.fn",
+    "method": "val"
+  },
+  {
+    "module": "event",
+    "object": "jQuery",
+    "method": "event"
+  },
+  {
+    "module": "event",
+    "object": "jQuery",
+    "method": "removeEvent"
+  },
+  {
+    "module": "event",
+    "object": "jQuery",
+    "method": "Event"
+  },
+  {
+    "module": "event",
+    "object": "jQuery.fn",
+    "method": "on"
+  },
+  {
+    "module": "event",
+    "object": "jQuery.fn",
+    "method": "one"
+  },
+  {
+    "module": "event",
+    "object": "jQuery.fn",
+    "method": "off"
+  },
+  {
+    "module": "event",
+    "object": "jQuery.fn",
+    "method": "trigger"
+  },
+  {
+    "module": "event",
+    "object": "jQuery.fn",
+    "method": "triggerHandler"
+  },
+  {
+    "module": "event/ajax",
+    "object": "jQuery.fn",
+    "method": "ajaxStart"
+  },
+  {
+    "module": "event/ajax",
+    "object": "jQuery.fn",
+    "method": "ajaxStop"
+  },
+  {
+    "module": "event/ajax",
+    "object": "jQuery.fn",
+    "method": "ajaxComplete"
+  },
+  {
+    "module": "event/ajax",
+    "object": "jQuery.fn",
+    "method": "ajaxError"
+  },
+  {
+    "module": "event/ajax",
+    "object": "jQuery.fn",
+    "method": "ajaxSuccess"
+  },
+  {
+    "module": "event/ajax",
+    "object": "jQuery.fn",
+    "method": "ajaxSend"
+  },
+  {
+    "module": "event/alias",
+    "object": "jQuery.fn",
+    "method": "blur"
+  },
+  {
+    "module": "event/alias",
+    "object": "jQuery.fn",
+    "method": "focus"
+  },
+  {
+    "module": "event/alias",
+    "object": "jQuery.fn",
+    "method": "focusin"
+  },
+  {
+    "module": "event/alias",
+    "object": "jQuery.fn",
+    "method": "focusout"
+  },
+  {
+    "module": "event/alias",
+    "object": "jQuery.fn",
+    "method": "load"
+  },
+  {
+    "module": "event/alias",
+    "object": "jQuery.fn",
+    "method": "resize"
+  },
+  {
+    "module": "event/alias",
+    "object": "jQuery.fn",
+    "method": "scroll"
+  },
+  {
+    "module": "event/alias",
+    "object": "jQuery.fn",
+    "method": "unload"
+  },
+  {
+    "module": "event/alias",
+    "object": "jQuery.fn",
+    "method": "click"
+  },
+  {
+    "module": "event/alias",
+    "object": "jQuery.fn",
+    "method": "dblclick"
+  },
+  {
+    "module": "event/alias",
+    "object": "jQuery.fn",
+    "method": "mousedown"
+  },
+  {
+    "module": "event/alias",
+    "object": "jQuery.fn",
+    "method": "mouseup"
+  },
+  {
+    "module": "event/alias",
+    "object": "jQuery.fn",
+    "method": "mousemove"
+  },
+  {
+    "module": "event/alias",
+    "object": "jQuery.fn",
+    "method": "mouseover"
+  },
+  {
+    "module": "event/alias",
+    "object": "jQuery.fn",
+    "method": "mouseout"
+  },
+  {
+    "module": "event/alias",
+    "object": "jQuery.fn",
+    "method": "mouseenter"
+  },
+  {
+    "module": "event/alias",
+    "object": "jQuery.fn",
+    "method": "mouseleave"
+  },
+  {
+    "module": "event/alias",
+    "object": "jQuery.fn",
+    "method": "change"
+  },
+  {
+    "module": "event/alias",
+    "object": "jQuery.fn",
+    "method": "select"
+  },
+  {
+    "module": "event/alias",
+    "object": "jQuery.fn",
+    "method": "submit"
+  },
+  {
+    "module": "event/alias",
+    "object": "jQuery.fn",
+    "method": "keydown"
+  },
+  {
+    "module": "event/alias",
+    "object": "jQuery.fn",
+    "method": "keypress"
+  },
+  {
+    "module": "event/alias",
+    "object": "jQuery.fn",
+    "method": "keyup"
+  },
+  {
+    "module": "event/alias",
+    "object": "jQuery.fn",
+    "method": "error"
+  },
+  {
+    "module": "event/alias",
+    "object": "jQuery.fn",
+    "method": "contextmenu"
+  },
+  {
+    "module": "event/alias",
+    "object": "jQuery.fn",
+    "method": "hover"
+  },
+  {
+    "module": "event/alias",
+    "object": "jQuery.fn",
+    "method": "bind"
+  },
+  {
+    "module": "event/alias",
+    "object": "jQuery.fn",
+    "method": "unbind"
+  },
+  {
+    "module": "event/alias",
+    "object": "jQuery.fn",
+    "method": "delegate"
+  },
+  {
+    "module": "event/alias",
+    "object": "jQuery.fn",
+    "method": "undelegate"
+  },
+  {
+    "module": "traversing",
+    "object": "jQuery",
+    "method": "dir"
+  },
+  {
+    "module": "traversing",
+    "object": "jQuery",
+    "method": "sibling"
+  },
+  {
+    "module": "traversing",
+    "object": "jQuery.fn",
+    "method": "has"
+  },
+  {
+    "module": "traversing",
+    "object": "jQuery.fn",
+    "method": "closest"
+  },
+  {
+    "module": "traversing",
+    "object": "jQuery.fn",
+    "method": "index"
+  },
+  {
+    "module": "traversing",
+    "object": "jQuery.fn",
+    "method": "add"
+  },
+  {
+    "module": "traversing",
+    "object": "jQuery.fn",
+    "method": "addBack"
+  },
+  {
+    "module": "traversing",
+    "object": "jQuery.fn",
+    "method": "parent"
+  },
+  {
+    "module": "traversing",
+    "object": "jQuery.fn",
+    "method": "parents"
+  },
+  {
+    "module": "traversing",
+    "object": "jQuery.fn",
+    "method": "parentsUntil"
+  },
+  {
+    "module": "traversing",
+    "object": "jQuery.fn",
+    "method": "next"
+  },
+  {
+    "module": "traversing",
+    "object": "jQuery.fn",
+    "method": "prev"
+  },
+  {
+    "module": "traversing",
+    "object": "jQuery.fn",
+    "method": "nextAll"
+  },
+  {
+    "module": "traversing",
+    "object": "jQuery.fn",
+    "method": "prevAll"
+  },
+  {
+    "module": "traversing",
+    "object": "jQuery.fn",
+    "method": "nextUntil"
+  },
+  {
+    "module": "traversing",
+    "object": "jQuery.fn",
+    "method": "prevUntil"
+  },
+  {
+    "module": "traversing",
+    "object": "jQuery.fn",
+    "method": "siblings"
+  },
+  {
+    "module": "traversing",
+    "object": "jQuery.fn",
+    "method": "children"
+  },
+  {
+    "module": "traversing",
+    "object": "jQuery.fn",
+    "method": "contents"
+  },
+  {
+    "module": "deprecated",
+    "object": "jQuery.fn",
+    "method": "size"
+  },
+  {
+    "module": "deprecated",
+    "object": "jQuery.fn",
+    "method": "andSelf"
+  },
+  {
+    "module": "manipulation",
+    "object": "jQuery",
+    "method": "clone"
+  },
+  {
+    "module": "manipulation",
+    "object": "jQuery",
+    "method": "buildFragment"
+  },
+  {
+    "module": "manipulation",
+    "object": "jQuery",
+    "method": "cleanData"
+  },
+  {
+    "module": "manipulation",
+    "object": "jQuery.fn",
+    "method": "text"
+  },
+  {
+    "module": "manipulation",
+    "object": "jQuery.fn",
+    "method": "append"
+  },
+  {
+    "module": "manipulation",
+    "object": "jQuery.fn",
+    "method": "prepend"
+  },
+  {
+    "module": "manipulation",
+    "object": "jQuery.fn",
+    "method": "before"
+  },
+  {
+    "module": "manipulation",
+    "object": "jQuery.fn",
+    "method": "after"
+  },
+  {
+    "module": "manipulation",
+    "object": "jQuery.fn",
+    "method": "remove"
+  },
+  {
+    "module": "manipulation",
+    "object": "jQuery.fn",
+    "method": "empty"
+  },
+  {
+    "module": "manipulation",
+    "object": "jQuery.fn",
+    "method": "clone"
+  },
+  {
+    "module": "manipulation",
+    "object": "jQuery.fn",
+    "method": "html"
+  },
+  {
+    "module": "manipulation",
+    "object": "jQuery.fn",
+    "method": "replaceWith"
+  },
+  {
+    "module": "manipulation",
+    "object": "jQuery.fn",
+    "method": "detach"
+  },
+  {
+    "module": "manipulation",
+    "object": "jQuery.fn",
+    "method": "domManip"
+  },
+  {
+    "module": "manipulation",
+    "object": "jQuery.fn",
+    "method": "appendTo"
+  },
+  {
+    "module": "manipulation",
+    "object": "jQuery.fn",
+    "method": "prependTo"
+  },
+  {
+    "module": "manipulation",
+    "object": "jQuery.fn",
+    "method": "insertBefore"
+  },
+  {
+    "module": "manipulation",
+    "object": "jQuery.fn",
+    "method": "insertAfter"
+  },
+  {
+    "module": "manipulation",
+    "object": "jQuery.fn",
+    "method": "replaceAll"
+  },
+  {
+    "module": "core/parseHTML",
+    "object": "jQuery",
+    "method": "parseHTML"
+  },
+  {
+    "module": "css",
+    "object": "jQuery",
+    "method": "cssHooks"
+  },
+  {
+    "module": "css",
+    "object": "jQuery",
+    "method": "cssNumber"
+  },
+  {
+    "module": "css",
+    "object": "jQuery",
+    "method": "cssProps"
+  },
+  {
+    "module": "css",
+    "object": "jQuery",
+    "method": "style"
+  },
+  {
+    "module": "css",
+    "object": "jQuery",
+    "method": "css"
+  },
+  {
+    "module": "css",
+    "object": "jQuery.fn",
+    "method": "css"
+  },
+  {
+    "module": "css",
+    "object": "jQuery.fn",
+    "method": "show"
+  },
+  {
+    "module": "css",
+    "object": "jQuery.fn",
+    "method": "hide"
+  },
+  {
+    "module": "css",
+    "object": "jQuery.fn",
+    "method": "toggle"
+  },
+  {
+    "module": "dimensions",
+    "object": "jQuery.fn",
+    "method": "innerHeight"
+  },
+  {
+    "module": "dimensions",
+    "object": "jQuery.fn",
+    "method": "height"
+  },
+  {
+    "module": "dimensions",
+    "object": "jQuery.fn",
+    "method": "outerHeight"
+  },
+  {
+    "module": "dimensions",
+    "object": "jQuery.fn",
+    "method": "innerWidth"
+  },
+  {
+    "module": "dimensions",
+    "object": "jQuery.fn",
+    "method": "width"
+  },
+  {
+    "module": "dimensions",
+    "object": "jQuery.fn",
+    "method": "outerWidth"
+  },
+  {
+    "module": "effects/Tween",
+    "object": "jQuery",
+    "method": "Tween"
+  },
+  {
+    "module": "effects/Tween",
+    "object": "jQuery",
+    "method": "easing"
+  },
+  {
+    "module": "effects/Tween",
+    "object": "jQuery",
+    "method": "fx"
+  },
+  {
+    "module": "offset",
+    "object": "jQuery",
+    "method": "offset"
+  },
+  {
+    "module": "offset",
+    "object": "jQuery.fn",
+    "method": "offset"
+  },
+  {
+    "module": "offset",
+    "object": "jQuery.fn",
+    "method": "position"
+  },
+  {
+    "module": "offset",
+    "object": "jQuery.fn",
+    "method": "offsetParent"
+  },
+  {
+    "module": "offset",
+    "object": "jQuery.fn",
+    "method": "scrollLeft"
+  },
+  {
+    "module": "offset",
+    "object": "jQuery.fn",
+    "method": "scrollTop"
+  },
+  {
+    "module": "effects",
+    "object": "jQuery",
+    "method": "Animation"
+  },
+  {
+    "module": "effects",
+    "object": "jQuery",
+    "method": "speed"
+  },
+  {
+    "module": "effects",
+    "object": "jQuery",
+    "method": "timers"
+  },
+  {
+    "module": "effects",
+    "object": "jQuery.fn",
+    "method": "fadeTo"
+  },
+  {
+    "module": "effects",
+    "object": "jQuery.fn",
+    "method": "animate"
+  },
+  {
+    "module": "effects",
+    "object": "jQuery.fn",
+    "method": "stop"
+  },
+  {
+    "module": "effects",
+    "object": "jQuery.fn",
+    "method": "finish"
+  },
+  {
+    "module": "effects",
+    "object": "jQuery.fn",
+    "method": "slideDown"
+  },
+  {
+    "module": "effects",
+    "object": "jQuery.fn",
+    "method": "slideUp"
+  },
+  {
+    "module": "effects",
+    "object": "jQuery.fn",
+    "method": "slideToggle"
+  },
+  {
+    "module": "effects",
+    "object": "jQuery.fn",
+    "method": "fadeIn"
+  },
+  {
+    "module": "effects",
+    "object": "jQuery.fn",
+    "method": "fadeOut"
+  },
+  {
+    "module": "effects",
+    "object": "jQuery.fn",
+    "method": "fadeToggle"
+  },
+  {
+    "module": "queue/delay",
+    "object": "jQuery.fn",
+    "method": "delay"
+  },
+  {
+    "module": "serialize",
+    "object": "jQuery",
+    "method": "param"
+  },
+  {
+    "module": "serialize",
+    "object": "jQuery.fn",
+    "method": "serialize"
+  },
+  {
+    "module": "serialize",
+    "object": "jQuery.fn",
+    "method": "serializeArray"
+  },
+  {
+    "module": "wrap",
+    "object": "jQuery.fn",
+    "method": "wrapAll"
+  },
+  {
+    "module": "wrap",
+    "object": "jQuery.fn",
+    "method": "wrapInner"
+  },
+  {
+    "module": "wrap",
+    "object": "jQuery.fn",
+    "method": "wrap"
+  },
+  {
+    "module": "wrap",
+    "object": "jQuery.fn",
+    "method": "unwrap"
+  }
+]
