@@ -120,15 +120,20 @@ function getMethods(file) {
 
   var curjQuery = _.keys(mockWindow.jQuery);
   var curjQueryfn = _.keys(mockWindow.jQuery.fn);
+  var curjQueryexpr = _.keys(mockWindow.jQuery.expr.filters);
   runFile(module, file);
   var newjQuery =  _.keys(mockWindow.jQuery);
   var newjQueryfn = _.keys(mockWindow.jQuery.fn);
+  var newjQueryexpr = _.keys(mockWindow.jQuery.expr.filters);
 
   _.difference(newjQuery, curjQuery).forEach(function (method) {
     newMethods.push({module: module, object: 'jQuery', method: method});
   });
   _.difference(newjQueryfn, curjQueryfn).forEach(function (method) {
     newMethods.push({module: module, object: 'jQuery.fn', method: method});
+  });
+  _.difference(newjQueryexpr, curjQueryexpr).forEach(function (method) {
+    newMethods.push({module: module, object: 'jQuery.expr.filters', method: method});
   });
 
   debug(module + ': ' + _.pluck(newMethods, 'method'));

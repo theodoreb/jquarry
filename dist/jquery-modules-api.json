@@ -40,6 +40,16 @@
     "method": "removeProp"
   },
   {
+    "module": "css/hiddenVisibleSelectors",
+    "object": "jQuery.expr.filters",
+    "method": "hidden"
+  },
+  {
+    "module": "css/hiddenVisibleSelectors",
+    "object": "jQuery.expr.filters",
+    "method": "visible"
+  },
+  {
     "module": "css/swap",
     "object": "jQuery",
     "method": "swap"
@@ -903,6 +913,11 @@
     "module": "effects",
     "object": "jQuery.fn",
     "method": "fadeToggle"
+  },
+  {
+    "module": "effects/animatedSelector",
+    "object": "jQuery.expr.filters",
+    "method": "animated"
   },
   {
     "module": "queue/delay",
