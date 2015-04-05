@@ -10,39 +10,9 @@
     "method": "parseXML"
   },
   {
-    "module": "callbacks",
-    "object": "jQuery",
-    "method": "Callbacks"
-  },
-  {
     "module": "core/access",
     "object": "jQuery",
     "method": "access"
-  },
-  {
-    "module": "attributes/attr",
-    "object": "jQuery",
-    "method": "attr"
-  },
-  {
-    "module": "attributes/attr",
-    "object": "jQuery",
-    "method": "removeAttr"
-  },
-  {
-    "module": "attributes/attr",
-    "object": "jQuery",
-    "method": "attrHooks"
-  },
-  {
-    "module": "attributes/attr",
-    "object": "jQuery.fn",
-    "method": "attr"
-  },
-  {
-    "module": "attributes/attr",
-    "object": "jQuery.fn",
-    "method": "removeAttr"
   },
   {
     "module": "attributes/prop",
@@ -73,6 +43,176 @@
     "module": "css/swap",
     "object": "jQuery",
     "method": "swap"
+  },
+  {
+    "module": "data/accepts",
+    "object": "jQuery",
+    "method": "acceptData"
+  },
+  {
+    "module": "traversing/findFilter",
+    "object": "jQuery",
+    "method": "filter"
+  },
+  {
+    "module": "traversing/findFilter",
+    "object": "jQuery.fn",
+    "method": "find"
+  },
+  {
+    "module": "traversing/findFilter",
+    "object": "jQuery.fn",
+    "method": "filter"
+  },
+  {
+    "module": "traversing/findFilter",
+    "object": "jQuery.fn",
+    "method": "not"
+  },
+  {
+    "module": "traversing/findFilter",
+    "object": "jQuery.fn",
+    "method": "is"
+  },
+  {
+    "module": "core/init",
+    "object": "jQuery.fn",
+    "method": "init"
+  },
+  {
+    "module": "attributes/val",
+    "object": "jQuery",
+    "method": "valHooks"
+  },
+  {
+    "module": "attributes/val",
+    "object": "jQuery.fn",
+    "method": "val"
+  },
+  {
+    "module": "traversing",
+    "object": "jQuery",
+    "method": "dir"
+  },
+  {
+    "module": "traversing",
+    "object": "jQuery",
+    "method": "sibling"
+  },
+  {
+    "module": "traversing",
+    "object": "jQuery.fn",
+    "method": "has"
+  },
+  {
+    "module": "traversing",
+    "object": "jQuery.fn",
+    "method": "closest"
+  },
+  {
+    "module": "traversing",
+    "object": "jQuery.fn",
+    "method": "index"
+  },
+  {
+    "module": "traversing",
+    "object": "jQuery.fn",
+    "method": "add"
+  },
+  {
+    "module": "traversing",
+    "object": "jQuery.fn",
+    "method": "addBack"
+  },
+  {
+    "module": "traversing",
+    "object": "jQuery.fn",
+    "method": "parent"
+  },
+  {
+    "module": "traversing",
+    "object": "jQuery.fn",
+    "method": "parents"
+  },
+  {
+    "module": "traversing",
+    "object": "jQuery.fn",
+    "method": "parentsUntil"
+  },
+  {
+    "module": "traversing",
+    "object": "jQuery.fn",
+    "method": "next"
+  },
+  {
+    "module": "traversing",
+    "object": "jQuery.fn",
+    "method": "prev"
+  },
+  {
+    "module": "traversing",
+    "object": "jQuery.fn",
+    "method": "nextAll"
+  },
+  {
+    "module": "traversing",
+    "object": "jQuery.fn",
+    "method": "prevAll"
+  },
+  {
+    "module": "traversing",
+    "object": "jQuery.fn",
+    "method": "nextUntil"
+  },
+  {
+    "module": "traversing",
+    "object": "jQuery.fn",
+    "method": "prevUntil"
+  },
+  {
+    "module": "traversing",
+    "object": "jQuery.fn",
+    "method": "siblings"
+  },
+  {
+    "module": "traversing",
+    "object": "jQuery.fn",
+    "method": "children"
+  },
+  {
+    "module": "traversing",
+    "object": "jQuery.fn",
+    "method": "contents"
+  },
+  {
+    "module": "deprecated",
+    "object": "jQuery.fn",
+    "method": "size"
+  },
+  {
+    "module": "deprecated",
+    "object": "jQuery.fn",
+    "method": "andSelf"
+  },
+  {
+    "module": "serialize",
+    "object": "jQuery",
+    "method": "param"
+  },
+  {
+    "module": "serialize",
+    "object": "jQuery.fn",
+    "method": "serialize"
+  },
+  {
+    "module": "serialize",
+    "object": "jQuery.fn",
+    "method": "serializeArray"
+  },
+  {
+    "module": "callbacks",
+    "object": "jQuery",
+    "method": "Callbacks"
   },
   {
     "module": "data",
@@ -110,11 +250,6 @@
     "method": "removeData"
   },
   {
-    "module": "data/accepts",
-    "object": "jQuery",
-    "method": "acceptData"
-  },
-  {
     "module": "deferred",
     "object": "jQuery",
     "method": "Deferred"
@@ -123,76 +258,6 @@
     "module": "deferred",
     "object": "jQuery",
     "method": "when"
-  },
-  {
-    "module": "exports/global",
-    "object": "jQuery",
-    "method": "noConflict"
-  },
-  {
-    "module": "queue",
-    "object": "jQuery",
-    "method": "queue"
-  },
-  {
-    "module": "queue",
-    "object": "jQuery",
-    "method": "dequeue"
-  },
-  {
-    "module": "queue",
-    "object": "jQuery",
-    "method": "_queueHooks"
-  },
-  {
-    "module": "queue",
-    "object": "jQuery.fn",
-    "method": "queue"
-  },
-  {
-    "module": "queue",
-    "object": "jQuery.fn",
-    "method": "dequeue"
-  },
-  {
-    "module": "queue",
-    "object": "jQuery.fn",
-    "method": "clearQueue"
-  },
-  {
-    "module": "queue",
-    "object": "jQuery.fn",
-    "method": "promise"
-  },
-  {
-    "module": "traversing/findFilter",
-    "object": "jQuery",
-    "method": "filter"
-  },
-  {
-    "module": "traversing/findFilter",
-    "object": "jQuery.fn",
-    "method": "find"
-  },
-  {
-    "module": "traversing/findFilter",
-    "object": "jQuery.fn",
-    "method": "filter"
-  },
-  {
-    "module": "traversing/findFilter",
-    "object": "jQuery.fn",
-    "method": "not"
-  },
-  {
-    "module": "traversing/findFilter",
-    "object": "jQuery.fn",
-    "method": "is"
-  },
-  {
-    "module": "core/init",
-    "object": "jQuery.fn",
-    "method": "init"
   },
   {
     "module": "ajax",
@@ -260,6 +325,86 @@
     "method": "_evalUrl"
   },
   {
+    "module": "core/ready",
+    "object": "jQuery",
+    "method": "readyWait"
+  },
+  {
+    "module": "core/ready",
+    "object": "jQuery",
+    "method": "holdReady"
+  },
+  {
+    "module": "core/ready",
+    "object": "jQuery",
+    "method": "ready"
+  },
+  {
+    "module": "core/ready",
+    "object": "jQuery.fn",
+    "method": "ready"
+  },
+  {
+    "module": "queue",
+    "object": "jQuery",
+    "method": "queue"
+  },
+  {
+    "module": "queue",
+    "object": "jQuery",
+    "method": "dequeue"
+  },
+  {
+    "module": "queue",
+    "object": "jQuery",
+    "method": "_queueHooks"
+  },
+  {
+    "module": "queue",
+    "object": "jQuery.fn",
+    "method": "queue"
+  },
+  {
+    "module": "queue",
+    "object": "jQuery.fn",
+    "method": "dequeue"
+  },
+  {
+    "module": "queue",
+    "object": "jQuery.fn",
+    "method": "clearQueue"
+  },
+  {
+    "module": "queue",
+    "object": "jQuery.fn",
+    "method": "promise"
+  },
+  {
+    "module": "attributes/attr",
+    "object": "jQuery",
+    "method": "attr"
+  },
+  {
+    "module": "attributes/attr",
+    "object": "jQuery",
+    "method": "removeAttr"
+  },
+  {
+    "module": "attributes/attr",
+    "object": "jQuery",
+    "method": "attrHooks"
+  },
+  {
+    "module": "attributes/attr",
+    "object": "jQuery.fn",
+    "method": "attr"
+  },
+  {
+    "module": "attributes/attr",
+    "object": "jQuery.fn",
+    "method": "removeAttr"
+  },
+  {
     "module": "attributes/classes",
     "object": "jQuery.fn",
     "method": "addClass"
@@ -278,16 +423,6 @@
     "module": "attributes/classes",
     "object": "jQuery.fn",
     "method": "hasClass"
-  },
-  {
-    "module": "attributes/val",
-    "object": "jQuery",
-    "method": "valHooks"
-  },
-  {
-    "module": "attributes/val",
-    "object": "jQuery.fn",
-    "method": "val"
   },
   {
     "module": "event",
@@ -510,111 +645,6 @@
     "method": "undelegate"
   },
   {
-    "module": "traversing",
-    "object": "jQuery",
-    "method": "dir"
-  },
-  {
-    "module": "traversing",
-    "object": "jQuery",
-    "method": "sibling"
-  },
-  {
-    "module": "traversing",
-    "object": "jQuery.fn",
-    "method": "has"
-  },
-  {
-    "module": "traversing",
-    "object": "jQuery.fn",
-    "method": "closest"
-  },
-  {
-    "module": "traversing",
-    "object": "jQuery.fn",
-    "method": "index"
-  },
-  {
-    "module": "traversing",
-    "object": "jQuery.fn",
-    "method": "add"
-  },
-  {
-    "module": "traversing",
-    "object": "jQuery.fn",
-    "method": "addBack"
-  },
-  {
-    "module": "traversing",
-    "object": "jQuery.fn",
-    "method": "parent"
-  },
-  {
-    "module": "traversing",
-    "object": "jQuery.fn",
-    "method": "parents"
-  },
-  {
-    "module": "traversing",
-    "object": "jQuery.fn",
-    "method": "parentsUntil"
-  },
-  {
-    "module": "traversing",
-    "object": "jQuery.fn",
-    "method": "next"
-  },
-  {
-    "module": "traversing",
-    "object": "jQuery.fn",
-    "method": "prev"
-  },
-  {
-    "module": "traversing",
-    "object": "jQuery.fn",
-    "method": "nextAll"
-  },
-  {
-    "module": "traversing",
-    "object": "jQuery.fn",
-    "method": "prevAll"
-  },
-  {
-    "module": "traversing",
-    "object": "jQuery.fn",
-    "method": "nextUntil"
-  },
-  {
-    "module": "traversing",
-    "object": "jQuery.fn",
-    "method": "prevUntil"
-  },
-  {
-    "module": "traversing",
-    "object": "jQuery.fn",
-    "method": "siblings"
-  },
-  {
-    "module": "traversing",
-    "object": "jQuery.fn",
-    "method": "children"
-  },
-  {
-    "module": "traversing",
-    "object": "jQuery.fn",
-    "method": "contents"
-  },
-  {
-    "module": "deprecated",
-    "object": "jQuery.fn",
-    "method": "size"
-  },
-  {
-    "module": "deprecated",
-    "object": "jQuery.fn",
-    "method": "andSelf"
-  },
-  {
     "module": "manipulation",
     "object": "jQuery",
     "method": "clone"
@@ -810,36 +840,6 @@
     "method": "fx"
   },
   {
-    "module": "offset",
-    "object": "jQuery",
-    "method": "offset"
-  },
-  {
-    "module": "offset",
-    "object": "jQuery.fn",
-    "method": "offset"
-  },
-  {
-    "module": "offset",
-    "object": "jQuery.fn",
-    "method": "position"
-  },
-  {
-    "module": "offset",
-    "object": "jQuery.fn",
-    "method": "offsetParent"
-  },
-  {
-    "module": "offset",
-    "object": "jQuery.fn",
-    "method": "scrollLeft"
-  },
-  {
-    "module": "offset",
-    "object": "jQuery.fn",
-    "method": "scrollTop"
-  },
-  {
     "module": "effects",
     "object": "jQuery",
     "method": "Animation"
@@ -910,19 +910,39 @@
     "method": "delay"
   },
   {
-    "module": "serialize",
+    "module": "exports/global",
     "object": "jQuery",
-    "method": "param"
+    "method": "noConflict"
   },
   {
-    "module": "serialize",
-    "object": "jQuery.fn",
-    "method": "serialize"
+    "module": "offset",
+    "object": "jQuery",
+    "method": "offset"
   },
   {
-    "module": "serialize",
+    "module": "offset",
     "object": "jQuery.fn",
-    "method": "serializeArray"
+    "method": "offset"
+  },
+  {
+    "module": "offset",
+    "object": "jQuery.fn",
+    "method": "position"
+  },
+  {
+    "module": "offset",
+    "object": "jQuery.fn",
+    "method": "offsetParent"
+  },
+  {
+    "module": "offset",
+    "object": "jQuery.fn",
+    "method": "scrollLeft"
+  },
+  {
+    "module": "offset",
+    "object": "jQuery.fn",
+    "method": "scrollTop"
   },
   {
     "module": "wrap",

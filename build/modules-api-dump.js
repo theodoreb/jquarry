@@ -15,18 +15,17 @@ var jqueryFolder = './node_modules/jquery/src/';
 var globOpts = {
   cwd: jqueryFolder,
   ignore: [
+    // Hard dependency, manually handled.
     'core.js',
     'selector*',
-    'core/ready.js',
     'sizzle/**/*',
-    'var/**.js',
+    // jQuery build related.
     'intro.js',
     'outro.js',
     'jquery.js',
-
-    'data/var/*.js',
-    'css/hiddenVisibleSelectors.js',
-    'effects/animatedSelector.js'
+    // make things crash.
+    'var/class2type.js',
+    'var/support.js'
   ]
 };
 
@@ -38,22 +37,17 @@ var mockWindow = {
 };
 // Mock up some jQuery stuff to be able to load individual modules.
 _.extend(mockWindow, {
-  nonce: +(new Date()),
+  // for core.js
   arr: [],
   class2type: {},
-  concat: [].concat,
   hasOwn: {}.hasOwnProperty,
-  indexOf: [].indexOf,
   pnum: (/[+-]?(?:\d*\.|)\d+(?:[eE][+-]?\d+|)/).source,
   push: [].push,
   rnotwhite: (/\S+/g),
-  slice: [].slice,
   strundefined: typeof undefined,
   support: {},
-  toString: {}.toString,
-  // Other
-  addGetHookIf: function () {},
-  rmargin: (/^margin/)
+  // for core/ready.js
+  setTimeout: function () {}
 });
 
 /**
@@ -115,6 +109,7 @@ function runFile(module, file) {
   }
   catch (e) {
     debug(module);
+    debug(scriptString);
     throw e;
   }
 }
@@ -153,6 +148,7 @@ function processjQuerySource(er, files) {
 
 // Fill jQuery object with bare minimum things. We won't check usage for those.
 runFile('core', 'core.js');
-runFile('selector', 'selector-native.js');
+runFile('sizzle', 'sizzle/dist/sizzle.js');
+runFile('selector', 'selector-sizzle.js');
 
 glob("**/*.js", globOpts, processjQuerySource);
