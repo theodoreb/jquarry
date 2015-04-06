@@ -1,396 +1,865 @@
 {
-  "ajax": [
-    "core",
-    "var/rnotwhite",
-    "ajax/var/nonce",
-    "ajax/var/rquery",
-    "core/init",
-    "ajax/parseJSON",
-    "ajax/parseXML",
-    "deferred"
-  ],
-  "ajax/jsonp": [
-    "core",
-    "var/nonce",
-    "var/rquery",
-    "ajax"
-  ],
-  "ajax/load": [
-    "core",
-    "core/parseHTML",
-    "ajax",
-    "traversing",
-    "manipulation",
-    "selector",
-    "event/alias"
-  ],
-  "ajax/parseJSON": [
-    "core"
-  ],
-  "ajax/parseXML": [
-    "core"
-  ],
-  "ajax/script": [
-    "core",
-    "ajax"
-  ],
-  "ajax/var/nonce": [
-    "core"
-  ],
-  "ajax/var/rquery": [],
-  "ajax/xhr": [
-    "core",
-    "var/support",
-    "ajax"
-  ],
-  "attributes": [
-    "core",
-    "attributes/attr",
-    "attributes/prop",
-    "attributes/classes",
-    "attributes/val"
-  ],
-  "attributes/attr": [
-    "core",
-    "var/rnotwhite",
-    "var/strundefined",
-    "core/access",
-    "support",
-    "selector"
-  ],
-  "attributes/classes": [
-    "core",
-    "var/rnotwhite",
-    "var/strundefined",
-    "data/var/data_priv",
-    "core/init"
-  ],
-  "attributes/prop": [
-    "core",
-    "core/access",
-    "support"
-  ],
-  "attributes/support": [
-    "var/support"
-  ],
-  "attributes/val": [
-    "core",
-    "support",
-    "core/init"
-  ],
-  "callbacks": [
-    "core",
-    "var/rnotwhite"
-  ],
-  "core": [
-    "var/arr",
-    "var/slice",
-    "var/concat",
-    "var/push",
-    "var/indexOf",
-    "var/class2type",
-    "var/toString",
-    "var/hasOwn",
-    "var/support"
-  ],
-  "core/access": [
-    "core"
-  ],
-  "core/init": [
-    "core",
-    "var/rsingleTag",
-    "traversing/findFilter"
-  ],
-  "core/parseHTML": [
-    "core",
-    "var/rsingleTag",
-    "manipulation"
-  ],
-  "core/ready": [
-    "core",
-    "core/init",
-    "deferred"
-  ],
-  "core/var/rsingleTag": [],
-  "css": [
-    "core",
-    "var/pnum",
-    "core/access",
-    "css/var/rmargin",
-    "css/var/rnumnonpx",
-    "css/var/cssExpand",
-    "css/var/isHidden",
-    "css/var/getStyles",
-    "css/curCSS",
-    "css/defaultDisplay",
-    "css/addGetHookIf",
-    "css/support",
-    "data/var/data_priv",
-    "core/init",
-    "css/swap",
-    "core/ready",
-    "selector"
-  ],
-  "css/addGetHookIf": [],
-  "css/curCSS": [
-    "core",
-    "var/rnumnonpx",
-    "var/rmargin",
-    "var/getStyles",
-    "selector"
-  ],
-  "css/defaultDisplay": [
-    "core",
-    "manipulation"
-  ],
-  "css/hiddenVisibleSelectors": [
-    "core",
-    "selector"
-  ],
-  "css/support": [
-    "core",
-    "var/support"
-  ],
-  "css/swap": [
-    "core"
-  ],
-  "css/var/cssExpand": [],
-  "css/var/getStyles": [],
-  "css/var/isHidden": [
-    "core",
-    "selector"
-  ],
-  "css/var/rmargin": [],
-  "css/var/rnumnonpx": [
-    "var/pnum"
-  ],
-  "data": [
-    "core",
-    "var/rnotwhite",
-    "core/access",
-    "data/var/data_priv",
-    "data/var/data_user"
-  ],
-  "data/Data": [
-    "core",
-    "var/rnotwhite",
-    "accepts"
-  ],
-  "data/accepts": [
-    "core"
-  ],
-  "data/var/data_priv": [
-    "data/Data"
-  ],
-  "data/var/data_user": [
-    "data/Data"
-  ],
-  "deferred": [
-    "core",
-    "var/slice",
-    "callbacks"
-  ],
-  "deprecated": [
-    "core",
-    "traversing"
-  ],
-  "dimensions": [
-    "core",
-    "core/access",
-    "css"
-  ],
-  "effects": [
-    "core",
-    "var/pnum",
-    "css/var/cssExpand",
-    "css/var/isHidden",
-    "css/defaultDisplay",
-    "data/var/data_priv",
-    "core/init",
-    "effects/Tween",
-    "queue",
-    "css",
-    "deferred",
-    "traversing"
-  ],
-  "effects/Tween": [
-    "core",
-    "css"
-  ],
-  "effects/animatedSelector": [
-    "core",
-    "selector",
-    "effects"
-  ],
-  "event": [
-    "core",
-    "var/strundefined",
-    "var/rnotwhite",
-    "var/hasOwn",
-    "var/slice",
-    "event/support",
-    "data/var/data_priv",
-    "core/init",
-    "data/accepts",
-    "selector"
-  ],
-  "event/ajax": [
-    "core",
-    "event"
-  ],
-  "event/alias": [
-    "core",
-    "event"
-  ],
-  "event/support": [
-    "var/support"
-  ],
-  "exports/amd": [
-    "core"
-  ],
-  "exports/global": [
-    "core",
-    "var/strundefined"
-  ],
-  "jquery": [
-    "core",
-    "selector",
-    "traversing",
-    "callbacks",
-    "deferred",
-    "core/ready",
-    "data",
-    "queue",
-    "queue/delay",
-    "attributes",
-    "event",
-    "event/alias",
-    "manipulation",
-    "manipulation/_evalUrl",
-    "wrap",
-    "css",
-    "css/hiddenVisibleSelectors",
-    "serialize",
-    "ajax",
-    "ajax/xhr",
-    "ajax/script",
-    "ajax/jsonp",
-    "ajax/load",
-    "event/ajax",
-    "effects",
-    "effects/animatedSelector",
-    "offset",
-    "dimensions",
-    "deprecated",
-    "exports/amd",
-    "exports/global"
-  ],
-  "manipulation": [
-    "core",
-    "var/concat",
-    "var/push",
-    "core/access",
-    "manipulation/var/rcheckableType",
-    "manipulation/support",
-    "data/var/data_priv",
-    "data/var/data_user",
-    "core/init",
-    "data/accepts",
-    "traversing",
-    "selector",
-    "event"
-  ],
-  "manipulation/_evalUrl": [
-    "ajax"
-  ],
-  "manipulation/support": [
-    "var/support"
-  ],
-  "manipulation/var/rcheckableType": [],
-  "offset": [
-    "core",
-    "var/strundefined",
-    "core/access",
-    "css/var/rnumnonpx",
-    "css/curCSS",
-    "css/addGetHookIf",
-    "css/support",
-    "core/init",
-    "css",
-    "selector"
-  ],
-  "queue": [
-    "core",
-    "data/var/data_priv",
-    "deferred",
-    "callbacks"
-  ],
-  "queue/delay": [
-    "core",
-    "queue",
-    "effects"
-  ],
-  "selector-native": [
-    "core"
-  ],
-  "selector-sizzle": [
-    "core",
-    "sizzle"
-  ],
-  "selector": [],
-  "serialize": [
-    "core",
-    "manipulation/var/rcheckableType",
-    "core/init",
-    "traversing",
-    "attributes/prop"
-  ],
-  "traversing": [
-    "core",
-    "var/indexOf",
-    "traversing/var/rneedsContext",
-    "core/init",
-    "traversing/findFilter",
-    "selector"
-  ],
-  "traversing/findFilter": [
-    "core",
-    "var/indexOf",
-    "var/rneedsContext",
-    "selector"
-  ],
-  "traversing/var/rneedsContext": [
-    "core",
-    "selector"
-  ],
-  "var/arr": [],
-  "var/class2type": [],
-  "var/concat": [
-    "arr"
-  ],
-  "var/hasOwn": [
-    "class2type"
-  ],
-  "var/indexOf": [
-    "arr"
-  ],
-  "var/pnum": [],
-  "var/push": [
-    "arr"
-  ],
-  "var/rnotwhite": [],
-  "var/slice": [
-    "arr"
-  ],
-  "var/strundefined": [],
-  "var/support": [],
-  "var/toString": [
-    "class2type"
-  ],
-  "wrap": [
-    "core",
-    "core/init",
-    "manipulation",
-    "traversing"
-  ]
+  "ajax": {
+    "dependencies": [
+      "core",
+      "var/rnotwhite",
+      "ajax/var/nonce",
+      "ajax/var/rquery",
+      "core/init",
+      "ajax/parseJSON",
+      "ajax/parseXML",
+      "deferred"
+    ],
+    "api": [
+      "active",
+      "lastModified",
+      "etag",
+      "ajaxSettings",
+      "ajaxSetup",
+      "ajaxPrefilter",
+      "ajaxTransport",
+      "ajax",
+      "getJSON",
+      "getScript",
+      "get",
+      "post"
+    ]
+  },
+  "ajax/jsonp": {
+    "dependencies": [
+      "core",
+      "var/nonce",
+      "var/rquery",
+      "ajax"
+    ],
+    "api": []
+  },
+  "ajax/load": {
+    "dependencies": [
+      "core",
+      "core/parseHTML",
+      "ajax",
+      "traversing",
+      "manipulation",
+      "selector",
+      "event/alias"
+    ],
+    "api": []
+  },
+  "ajax/parseJSON": {
+    "dependencies": [
+      "core"
+    ],
+    "api": [
+      "parseJSON"
+    ]
+  },
+  "ajax/parseXML": {
+    "dependencies": [
+      "core"
+    ],
+    "api": [
+      "parseXML"
+    ]
+  },
+  "ajax/script": {
+    "dependencies": [
+      "core",
+      "ajax"
+    ],
+    "api": []
+  },
+  "ajax/var/nonce": {
+    "dependencies": [
+      "core"
+    ],
+    "api": []
+  },
+  "ajax/var/rquery": {
+    "dependencies": [],
+    "api": []
+  },
+  "ajax/xhr": {
+    "dependencies": [
+      "core",
+      "var/support",
+      "ajax"
+    ],
+    "api": []
+  },
+  "attributes": {
+    "dependencies": [
+      "core",
+      "attributes/attr",
+      "attributes/prop",
+      "attributes/classes",
+      "attributes/val"
+    ],
+    "api": []
+  },
+  "attributes/attr": {
+    "dependencies": [
+      "core",
+      "var/rnotwhite",
+      "var/strundefined",
+      "core/access",
+      "support",
+      "selector"
+    ],
+    "api": [
+      "attr",
+      "removeAttr",
+      "attrHooks",
+      "attr",
+      "removeAttr"
+    ]
+  },
+  "attributes/classes": {
+    "dependencies": [
+      "core",
+      "var/rnotwhite",
+      "var/strundefined",
+      "data/var/data_priv",
+      "core/init"
+    ],
+    "api": [
+      "addClass",
+      "removeClass",
+      "toggleClass",
+      "hasClass"
+    ]
+  },
+  "attributes/prop": {
+    "dependencies": [
+      "core",
+      "core/access",
+      "support"
+    ],
+    "api": [
+      "propFix",
+      "prop",
+      "propHooks",
+      "prop",
+      "removeProp"
+    ]
+  },
+  "attributes/support": {
+    "dependencies": [
+      "var/support"
+    ],
+    "api": []
+  },
+  "attributes/val": {
+    "dependencies": [
+      "core",
+      "support",
+      "core/init"
+    ],
+    "api": [
+      "valHooks",
+      "val"
+    ]
+  },
+  "callbacks": {
+    "dependencies": [
+      "core",
+      "var/rnotwhite"
+    ],
+    "api": [
+      "Callbacks"
+    ]
+  },
+  "core": {
+    "dependencies": [
+      "var/arr",
+      "var/slice",
+      "var/concat",
+      "var/push",
+      "var/indexOf",
+      "var/class2type",
+      "var/toString",
+      "var/hasOwn",
+      "var/support"
+    ],
+    "api": []
+  },
+  "core/access": {
+    "dependencies": [
+      "core"
+    ],
+    "api": [
+      "access"
+    ]
+  },
+  "core/init": {
+    "dependencies": [
+      "core",
+      "var/rsingleTag",
+      "traversing/findFilter"
+    ],
+    "api": [
+      "init"
+    ]
+  },
+  "core/parseHTML": {
+    "dependencies": [
+      "core",
+      "var/rsingleTag",
+      "manipulation"
+    ],
+    "api": [
+      "parseHTML"
+    ]
+  },
+  "core/ready": {
+    "dependencies": [
+      "core",
+      "core/init",
+      "deferred"
+    ],
+    "api": [
+      "readyWait",
+      "holdReady",
+      "ready",
+      "ready"
+    ]
+  },
+  "core/var/rsingleTag": {
+    "dependencies": [],
+    "api": []
+  },
+  "css": {
+    "dependencies": [
+      "core",
+      "var/pnum",
+      "core/access",
+      "css/var/rmargin",
+      "css/var/rnumnonpx",
+      "css/var/cssExpand",
+      "css/var/isHidden",
+      "css/var/getStyles",
+      "css/curCSS",
+      "css/defaultDisplay",
+      "css/addGetHookIf",
+      "css/support",
+      "data/var/data_priv",
+      "core/init",
+      "css/swap",
+      "core/ready",
+      "selector"
+    ],
+    "api": [
+      "cssHooks",
+      "cssNumber",
+      "cssProps",
+      "style",
+      "css",
+      "css",
+      "show",
+      "hide",
+      "toggle"
+    ]
+  },
+  "css/addGetHookIf": {
+    "dependencies": [],
+    "api": []
+  },
+  "css/curCSS": {
+    "dependencies": [
+      "core",
+      "var/rnumnonpx",
+      "var/rmargin",
+      "var/getStyles",
+      "selector"
+    ],
+    "api": []
+  },
+  "css/defaultDisplay": {
+    "dependencies": [
+      "core",
+      "manipulation"
+    ],
+    "api": []
+  },
+  "css/hiddenVisibleSelectors": {
+    "dependencies": [
+      "core",
+      "selector"
+    ],
+    "api": [
+      ":hidden",
+      ":visible"
+    ]
+  },
+  "css/support": {
+    "dependencies": [
+      "core",
+      "var/support"
+    ],
+    "api": []
+  },
+  "css/swap": {
+    "dependencies": [
+      "core"
+    ],
+    "api": [
+      "swap"
+    ]
+  },
+  "css/var/cssExpand": {
+    "dependencies": [],
+    "api": []
+  },
+  "css/var/getStyles": {
+    "dependencies": [],
+    "api": []
+  },
+  "css/var/isHidden": {
+    "dependencies": [
+      "core",
+      "selector"
+    ],
+    "api": []
+  },
+  "css/var/rmargin": {
+    "dependencies": [],
+    "api": []
+  },
+  "css/var/rnumnonpx": {
+    "dependencies": [
+      "var/pnum"
+    ],
+    "api": []
+  },
+  "data": {
+    "dependencies": [
+      "core",
+      "var/rnotwhite",
+      "core/access",
+      "data/var/data_priv",
+      "data/var/data_user"
+    ],
+    "api": [
+      "hasData",
+      "data",
+      "removeData",
+      "_data",
+      "_removeData",
+      "data",
+      "removeData"
+    ]
+  },
+  "data/Data": {
+    "dependencies": [
+      "core",
+      "var/rnotwhite",
+      "accepts"
+    ],
+    "api": []
+  },
+  "data/accepts": {
+    "dependencies": [
+      "core"
+    ],
+    "api": [
+      "acceptData"
+    ]
+  },
+  "data/var/data_priv": {
+    "dependencies": [
+      "data/Data"
+    ],
+    "api": []
+  },
+  "data/var/data_user": {
+    "dependencies": [
+      "data/Data"
+    ],
+    "api": []
+  },
+  "deferred": {
+    "dependencies": [
+      "core",
+      "var/slice",
+      "callbacks"
+    ],
+    "api": [
+      "Deferred",
+      "when"
+    ]
+  },
+  "deprecated": {
+    "dependencies": [
+      "core",
+      "traversing"
+    ],
+    "api": [
+      "size",
+      "andSelf"
+    ]
+  },
+  "dimensions": {
+    "dependencies": [
+      "core",
+      "core/access",
+      "css"
+    ],
+    "api": [
+      "innerHeight",
+      "height",
+      "outerHeight",
+      "innerWidth",
+      "width",
+      "outerWidth"
+    ]
+  },
+  "effects": {
+    "dependencies": [
+      "core",
+      "var/pnum",
+      "css/var/cssExpand",
+      "css/var/isHidden",
+      "css/defaultDisplay",
+      "data/var/data_priv",
+      "core/init",
+      "effects/Tween",
+      "queue",
+      "css",
+      "deferred",
+      "traversing"
+    ],
+    "api": [
+      "Animation",
+      "speed",
+      "timers",
+      "fadeTo",
+      "animate",
+      "stop",
+      "finish",
+      "slideDown",
+      "slideUp",
+      "slideToggle",
+      "fadeIn",
+      "fadeOut",
+      "fadeToggle"
+    ]
+  },
+  "effects/Tween": {
+    "dependencies": [
+      "core",
+      "css"
+    ],
+    "api": [
+      "Tween",
+      "easing",
+      "fx"
+    ]
+  },
+  "effects/animatedSelector": {
+    "dependencies": [
+      "core",
+      "selector",
+      "effects"
+    ],
+    "api": [
+      ":animated"
+    ]
+  },
+  "event": {
+    "dependencies": [
+      "core",
+      "var/strundefined",
+      "var/rnotwhite",
+      "var/hasOwn",
+      "var/slice",
+      "event/support",
+      "data/var/data_priv",
+      "core/init",
+      "data/accepts",
+      "selector"
+    ],
+    "api": [
+      "event",
+      "removeEvent",
+      "Event",
+      "on",
+      "one",
+      "off",
+      "trigger",
+      "triggerHandler"
+    ]
+  },
+  "event/ajax": {
+    "dependencies": [
+      "core",
+      "event"
+    ],
+    "api": [
+      "ajaxStart",
+      "ajaxStop",
+      "ajaxComplete",
+      "ajaxError",
+      "ajaxSuccess",
+      "ajaxSend"
+    ]
+  },
+  "event/alias": {
+    "dependencies": [
+      "core",
+      "event"
+    ],
+    "api": [
+      "blur",
+      "focus",
+      "focusin",
+      "focusout",
+      "load",
+      "resize",
+      "scroll",
+      "unload",
+      "click",
+      "dblclick",
+      "mousedown",
+      "mouseup",
+      "mousemove",
+      "mouseover",
+      "mouseout",
+      "mouseenter",
+      "mouseleave",
+      "change",
+      "select",
+      "submit",
+      "keydown",
+      "keypress",
+      "keyup",
+      "error",
+      "contextmenu",
+      "hover",
+      "bind",
+      "unbind",
+      "delegate",
+      "undelegate"
+    ]
+  },
+  "event/support": {
+    "dependencies": [
+      "var/support"
+    ],
+    "api": []
+  },
+  "exports/amd": {
+    "dependencies": [
+      "core"
+    ],
+    "api": []
+  },
+  "exports/global": {
+    "dependencies": [
+      "core",
+      "var/strundefined"
+    ],
+    "api": [
+      "noConflict"
+    ]
+  },
+  "jquery": {
+    "dependencies": [
+      "core",
+      "selector",
+      "traversing",
+      "callbacks",
+      "deferred",
+      "core/ready",
+      "data",
+      "queue",
+      "queue/delay",
+      "attributes",
+      "event",
+      "event/alias",
+      "manipulation",
+      "manipulation/_evalUrl",
+      "wrap",
+      "css",
+      "css/hiddenVisibleSelectors",
+      "serialize",
+      "ajax",
+      "ajax/xhr",
+      "ajax/script",
+      "ajax/jsonp",
+      "ajax/load",
+      "event/ajax",
+      "effects",
+      "effects/animatedSelector",
+      "offset",
+      "dimensions",
+      "deprecated",
+      "exports/amd",
+      "exports/global"
+    ],
+    "api": []
+  },
+  "manipulation": {
+    "dependencies": [
+      "core",
+      "var/concat",
+      "var/push",
+      "core/access",
+      "manipulation/var/rcheckableType",
+      "manipulation/support",
+      "data/var/data_priv",
+      "data/var/data_user",
+      "core/init",
+      "data/accepts",
+      "traversing",
+      "selector",
+      "event"
+    ],
+    "api": [
+      "clone",
+      "buildFragment",
+      "cleanData",
+      "text",
+      "append",
+      "prepend",
+      "before",
+      "after",
+      "remove",
+      "empty",
+      "clone",
+      "html",
+      "replaceWith",
+      "detach",
+      "domManip",
+      "appendTo",
+      "prependTo",
+      "insertBefore",
+      "insertAfter",
+      "replaceAll"
+    ]
+  },
+  "manipulation/_evalUrl": {
+    "dependencies": [
+      "ajax"
+    ],
+    "api": [
+      "_evalUrl"
+    ]
+  },
+  "manipulation/support": {
+    "dependencies": [
+      "var/support"
+    ],
+    "api": []
+  },
+  "manipulation/var/rcheckableType": {
+    "dependencies": [],
+    "api": []
+  },
+  "offset": {
+    "dependencies": [
+      "core",
+      "var/strundefined",
+      "core/access",
+      "css/var/rnumnonpx",
+      "css/curCSS",
+      "css/addGetHookIf",
+      "css/support",
+      "core/init",
+      "css",
+      "selector"
+    ],
+    "api": [
+      "offset",
+      "offset",
+      "position",
+      "offsetParent",
+      "scrollLeft",
+      "scrollTop"
+    ]
+  },
+  "queue": {
+    "dependencies": [
+      "core",
+      "data/var/data_priv",
+      "deferred",
+      "callbacks"
+    ],
+    "api": [
+      "queue",
+      "dequeue",
+      "_queueHooks",
+      "queue",
+      "dequeue",
+      "clearQueue",
+      "promise"
+    ]
+  },
+  "queue/delay": {
+    "dependencies": [
+      "core",
+      "queue",
+      "effects"
+    ],
+    "api": [
+      "delay"
+    ]
+  },
+  "selector-native": {
+    "dependencies": [
+      "core"
+    ],
+    "api": []
+  },
+  "selector-sizzle": {
+    "dependencies": [
+      "core",
+      "sizzle"
+    ],
+    "api": []
+  },
+  "selector": {
+    "dependencies": [],
+    "api": []
+  },
+  "serialize": {
+    "dependencies": [
+      "core",
+      "manipulation/var/rcheckableType",
+      "core/init",
+      "traversing",
+      "attributes/prop"
+    ],
+    "api": [
+      "param",
+      "serialize",
+      "serializeArray"
+    ]
+  },
+  "traversing": {
+    "dependencies": [
+      "core",
+      "var/indexOf",
+      "traversing/var/rneedsContext",
+      "core/init",
+      "traversing/findFilter",
+      "selector"
+    ],
+    "api": [
+      "dir",
+      "sibling",
+      "has",
+      "closest",
+      "index",
+      "add",
+      "addBack",
+      "parent",
+      "parents",
+      "parentsUntil",
+      "next",
+      "prev",
+      "nextAll",
+      "prevAll",
+      "nextUntil",
+      "prevUntil",
+      "siblings",
+      "children",
+      "contents"
+    ]
+  },
+  "traversing/findFilter": {
+    "dependencies": [
+      "core",
+      "var/indexOf",
+      "var/rneedsContext",
+      "selector"
+    ],
+    "api": [
+      "filter",
+      "find",
+      "filter",
+      "not",
+      "is"
+    ]
+  },
+  "traversing/var/rneedsContext": {
+    "dependencies": [
+      "core",
+      "selector"
+    ],
+    "api": []
+  },
+  "var/arr": {
+    "dependencies": [],
+    "api": []
+  },
+  "var/class2type": {
+    "dependencies": [],
+    "api": []
+  },
+  "var/concat": {
+    "dependencies": [
+      "arr"
+    ],
+    "api": []
+  },
+  "var/hasOwn": {
+    "dependencies": [
+      "class2type"
+    ],
+    "api": []
+  },
+  "var/indexOf": {
+    "dependencies": [
+      "arr"
+    ],
+    "api": []
+  },
+  "var/pnum": {
+    "dependencies": [],
+    "api": []
+  },
+  "var/push": {
+    "dependencies": [
+      "arr"
+    ],
+    "api": []
+  },
+  "var/rnotwhite": {
+    "dependencies": [],
+    "api": []
+  },
+  "var/slice": {
+    "dependencies": [
+      "arr"
+    ],
+    "api": []
+  },
+  "var/strundefined": {
+    "dependencies": [],
+    "api": []
+  },
+  "var/support": {
+    "dependencies": [],
+    "api": []
+  },
+  "var/toString": {
+    "dependencies": [
+      "class2type"
+    ],
+    "api": []
+  },
+  "wrap": {
+    "dependencies": [
+      "core",
+      "core/init",
+      "manipulation",
+      "traversing"
+    ],
+    "api": [
+      "wrapAll",
+      "wrapInner",
+      "wrap",
+      "unwrap"
+    ]
+  }
 }

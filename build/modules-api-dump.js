@@ -115,6 +115,12 @@ glob("**/*.js", {cwd: jqueryFolder, ignore: [
   'outro.js'
 ]}, function (er, files) {
   var tree = jqueryDepsOrder.tree(files, {folder: jqueryFolder});
+  var treeAll = _.mapObject(tree, function (deps, module) {
+    return {
+      dependencies: deps,
+      api: _.pluck(_.where(jQueryMethods, {module: module}), 'method')
+    };
+  });
   debug('Writting tree dependency file.');
-  fs.writeFile(jqueryModulesApiFile.replace('api', 'tree'), JSON.stringify(tree, null, 2));
+  fs.writeFile(jqueryModulesApiFile.replace('api', 'tree'), JSON.stringify(treeAll, null, 2));
 });
