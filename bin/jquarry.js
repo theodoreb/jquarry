@@ -1,5 +1,6 @@
 "use strict";
 
+var fs = require('fs');
 var program = require('commander');
 var scanFile = require('../lib/target/scan-jquery-use');
 var debug = require('debug')('main');
@@ -27,7 +28,7 @@ program
 program
   .command('*')
   .action(function(env, options) {
-    var modules = _.keys(scanFile(env));
+    var modules = _.keys(scanFile(String(fs.readFileSync(env))));
     if (modules.length) {
       var keys = modules.map(function (k) { return '+' + k; });
       // Check whether Sizzle selectors are loaded.
