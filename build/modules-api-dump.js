@@ -71,7 +71,7 @@ function getMethods(file) {
   var curjQueryfn = _.keys(mockWindow.jQuery.fn);
   var curjQueryexpr = _.keys(mockWindow.jQuery.expr.filters);
   runFile(module, file);
-  var newjQuery =  _.keys(mockWindow.jQuery);
+  var newjQuery = _.keys(mockWindow.jQuery);
   var newjQueryfn = _.keys(mockWindow.jQuery.fn);
   var newjQueryexpr = _.keys(mockWindow.jQuery.expr.filters);
 
