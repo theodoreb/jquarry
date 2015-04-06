@@ -31,12 +31,14 @@ program
     if (modules.length) {
       var keys = modules.map(function (k) { return '+' + k; });
       // Check whether Sizzle selectors are loaded.
-      if (keys.indexOf('+sizzle') === -1 && !(/Selectors?$/g).test(keys.join(','))) {
-        keys.unshift('-sizzle');
-        keys.unshift('+selector-native');
-      }
-      else {
-        keys.unshift('+sizzle');
+      if (keys.indexOf('+sizzle') === -1) {
+        if (!(/Selectors?/g).test(keys.join(','))) {
+          keys.unshift('-sizzle');
+          keys.unshift('+selector-native');
+        }
+        else {
+          keys.unshift('+sizzle');
+        }
       }
       // Core is always needed.
       keys.unshift('+core');
