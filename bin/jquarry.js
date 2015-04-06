@@ -27,9 +27,9 @@ program
 program
   .command('*')
   .action(function(env, options) {
-    var modules = scanFile(env);
+    var modules = _.keys(scanFile(env));
     if (modules.length) {
-      var keys = _.keys(modules).map(function (k) { return '+' + k; });
+      var keys = modules.map(function (k) { return '+' + k; });
       // Check whether Sizzle selectors are loaded.
       if (keys.indexOf('+sizzle') === -1 && !(/Selectors?$/g).test(keys.join(','))) {
         keys.unshift('-sizzle');
