@@ -27,16 +27,21 @@ program
 program
   .command('*')
   .action(function(env, options) {
-    var keys = _.keys(scanFile(env)).map(function (k) { return '+' + k; });
-    // Check whether Sizzle selectors are loaded.
-    if (keys.indexOf('+sizzle') === -1 &&
-      !(/Selectors?$/g).test(keys.join(','))) {
-      keys.push('-sizzle');
+    var modules = scanFile(env);
+    if (modules) {
+      var keys = _.keys(modules).map(function (k) { return '+' + k; });
+      // Check whether Sizzle selectors are loaded.
+      if (keys.indexOf('+sizzle') === -1 && !(/Selectors?$/g).test(keys.join(','))) {
+        keys.unshift('-sizzle');
+        keys.unshift('+selector-native');
+      }
+      else {
+        keys.unshift('+sizzle');
+      }
+      // Core is always needed.
+      keys.unshift('+core');
+      console.log('grunt build:*' + (keys.length ? ':' + keys.join(':') : '*') + ' && grunt uglify');
     }
-    else {
-      keys.push('+sizzle');
-    }
-    console.log('grunt build:*' + (keys.length ? ':' + keys.join(':') : '*'));
   });
 
 program.parse(process.argv);
