@@ -28,7 +28,7 @@ program
   .command('*')
   .action(function(env, options) {
     var modules = scanFile(env);
-    if (modules) {
+    if (modules.length) {
       var keys = _.keys(modules).map(function (k) { return '+' + k; });
       // Check whether Sizzle selectors are loaded.
       if (keys.indexOf('+sizzle') === -1 && !(/Selectors?$/g).test(keys.join(','))) {
@@ -41,6 +41,9 @@ program
       // Core is always needed.
       keys.unshift('+core');
       console.log('grunt build:*' + (keys.length ? ':' + keys.join(':') : '*') + ' && grunt uglify');
+    }
+    else {
+      console.log('jQuery is not used.');
     }
   });
 
