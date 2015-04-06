@@ -28,6 +28,7 @@ program
   .command('*')
   .action(function(env, options) {
     var keys = _.keys(scanFile(env)).map(function (k) { return '+' + k; });
+    // Check whether Sizzle selectors are loaded.
     if (keys.indexOf('+sizzle') === -1 &&
       !(/Selectors?$/g).test(keys.join(','))) {
       keys.push('-sizzle');
