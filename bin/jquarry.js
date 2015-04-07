@@ -55,6 +55,9 @@ program
         if (keys.indexOf('+selector-native') !== -1) {
           keys.unshift('-sizzle');
         }
+        if (keys.indexOf('+exports/amd') === -1 && keys.indexOf('+exports/global')) {
+          keys.push('+exports/global');
+        }
         console.log('grunt build:*' + (keys.length ? ':' + keys.join(':') : '*') + ' && grunt uglify');
       }
       else {
