@@ -15,7 +15,10 @@ program
     var jQueryOrder = "var/arr var/slice var/concat var/push var/indexOf var/class2type var/toString var/hasOwn var/support core sizzle selector-sizzle selector-native selector traversing/var/rneedsContext core/var/rsingleTag traversing/findFilter core/init traversing var/rnotwhite callbacks deferred core/ready core/access data/accepts data/Data data/var/data_priv data/var/data_user data queue var/pnum css/var/cssExpand css/var/isHidden manipulation/var/rcheckableType manipulation/support var/strundefined event/support event manipulation css/defaultDisplay css/var/rmargin css/var/rnumnonpx css/var/getStyles css/curCSS css/addGetHookIf css/support css/swap css effects/Tween effects queue/delay attributes/support attributes/attr attributes/prop attributes/classes attributes/val attributes event/alias ajax/var/nonce ajax/var/rquery ajax/parseJSON ajax/parseXML ajax manipulation/_evalUrl wrap css/hiddenVisibleSelectors serialize ajax/xhr ajax/script ajax/jsonp core/parseHTML ajax/load event/ajax effects/animatedSelector offset dimensions deprecated exports/amd exports/global jquery".split(' ');
 
     function getModulesFromFile(file) {
-      return _.keys(scanFile(String(fs.readFileSync(file))));
+      var modules = scanFile(String(fs.readFileSync(file)));
+      debug(file);
+      debug(modules);
+      return _.keys(modules);
     }
 
     function processFiles(files) {
