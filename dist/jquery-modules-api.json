@@ -595,6 +595,11 @@
     "method": "hasClass"
   },
   {
+    "module": "exports/global",
+    "object": "jQuery",
+    "method": "noConflict"
+  },
+  {
     "module": "event",
     "object": "jQuery",
     "method": "event"
@@ -1010,6 +1015,36 @@
     "method": "fx"
   },
   {
+    "module": "offset",
+    "object": "jQuery",
+    "method": "offset"
+  },
+  {
+    "module": "offset",
+    "object": "jQuery.fn",
+    "method": "offset"
+  },
+  {
+    "module": "offset",
+    "object": "jQuery.fn",
+    "method": "position"
+  },
+  {
+    "module": "offset",
+    "object": "jQuery.fn",
+    "method": "offsetParent"
+  },
+  {
+    "module": "offset",
+    "object": "jQuery.fn",
+    "method": "scrollLeft"
+  },
+  {
+    "module": "offset",
+    "object": "jQuery.fn",
+    "method": "scrollTop"
+  },
+  {
     "module": "effects",
     "object": "jQuery",
     "method": "Animation"
@@ -1083,41 +1118,6 @@
     "module": "queue/delay",
     "object": "jQuery.fn",
     "method": "delay"
-  },
-  {
-    "module": "exports/global",
-    "object": "jQuery",
-    "method": "noConflict"
-  },
-  {
-    "module": "offset",
-    "object": "jQuery",
-    "method": "offset"
-  },
-  {
-    "module": "offset",
-    "object": "jQuery.fn",
-    "method": "offset"
-  },
-  {
-    "module": "offset",
-    "object": "jQuery.fn",
-    "method": "position"
-  },
-  {
-    "module": "offset",
-    "object": "jQuery.fn",
-    "method": "offsetParent"
-  },
-  {
-    "module": "offset",
-    "object": "jQuery.fn",
-    "method": "scrollLeft"
-  },
-  {
-    "module": "offset",
-    "object": "jQuery.fn",
-    "method": "scrollTop"
   },
   {
     "module": "wrap",

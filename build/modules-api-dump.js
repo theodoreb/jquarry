@@ -22,11 +22,7 @@ var globOpts = {
     'sizzle/**/*',
     // jQuery build related.
     'intro.js',
-    'outro.js',
-    //'jquery.js',
-    // make things crash.
-    'var/class2type.js',
-    'var/support.js'
+    'outro.js'
   ]
 };
 
@@ -52,7 +48,8 @@ _.extend(mockWindow, {
 });
 
 function runFile(module, file) {
-  var scriptString = convert(module, file, String(fs.readFileSync(jqueryFolder + file)));
+  var path = jqueryFolder + file;
+  var scriptString = convert(module, path, String(fs.readFileSync(path)));
   try {
     vm.createScript(scriptString, file).runInNewContext(mockWindow, file);
   }
