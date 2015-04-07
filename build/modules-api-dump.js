@@ -23,7 +23,7 @@ var globOpts = {
     // jQuery build related.
     'intro.js',
     'outro.js',
-    'jquery.js',
+    //'jquery.js',
     // make things crash.
     'var/class2type.js',
     'var/support.js'

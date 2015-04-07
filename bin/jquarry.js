@@ -19,42 +19,37 @@ program
     }
 
     function processFiles(files) {
-      var modules = [];
-      var excludeSizzle = false;
-      modules = _.uniq(_.flatten(files.map(getModulesFromFile)));
+      var modules = _.uniq(_.flatten(files.map(getModulesFromFile)));
       if (modules.length) {
         var keys = modules;
-        // Check whether Sizzle selectors are loaded.
-        if (keys.indexOf('sizzle') === -1) {
-          if (!(/Selectors?/g).test(keys.join(','))) {
-            excludeSizzle = true;
-            keys.push('selector-native');
-          }
-          else {
-            keys.push('sizzle');
-            keys.push('selector-sizzle');
-          }
-        }
-
-        // Core is always needed.
-        if (keys.indexOf('core') === -1) {
-          keys.push('core');
-        }
 
         // Add all implicit dependencies, helps with diffable jQuery build.
-
         var extraDependencies = [];
-        _.each(dependencies, function (mod, name) {
+        var resolveDeps = function (mod, name) {
           if (keys.indexOf(name) !== -1 && mod.dependencies.length) {
             extraDependencies.push(mod.dependencies);
           }
-        });
+        };
 
-        keys = _.uniq(keys.concat(_.flatten(extraDependencies)));
+        // Resolve all dependencies.
+        var prevKeysLength = 0;
+        do {
+          prevKeysLength = keys.length;
+          _.each(dependencies, resolveDeps);
+          keys = _.uniq(keys.concat(_.flatten(extraDependencies)));
+        } while (prevKeysLength !== keys.length);
+
+        // If we have both sizzle and native selectors, sizzle wins.
+        var nativeSelector = keys.indexOf('selector-native');
+        var sizzle = keys.indexOf('sizzle');
+        if (nativeSelector !== -1 && sizzle !== -1) {
+          keys.splice(nativeSelector, 1);
+        }
 
         // Follow jQuery build order to make a diffable version.
         keys = _.intersection(jQueryOrder, keys).map(function (k) { return '+' + k; });
-        if (excludeSizzle) {
+        // Need to explicitly exclude sizzle if we use native selectors.
+        if (keys.indexOf('+selector-native') !== -1) {
           keys.unshift('-sizzle');
         }
         console.log('grunt build:*' + (keys.length ? ':' + keys.join(':') : '*') + ' && grunt uglify');
