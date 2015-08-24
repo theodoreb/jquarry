@@ -11,7 +11,19 @@ var _ = require('underscore');
 var glob = require('glob');
 
 program
+  .command('jquery <dir>')
+  .description("Parse jQuery source and extract each module's API and dependencies.")
+  .option('--dump [filename]', 'Save parsed data in a file.')
+  .action(function (env, options) {
+    // @todo
+  });
+
+program
   .command('*')
+  .description('Parse JS code and display jQuery API usage')
+  .option('--jquery <dir>', 'jQuery source directory')
+  .option('--build', 'Build the custom jQuery file, requires --jquery to be set')
+  //.option('')
   .action(function (env, options) {
 
     var jQueryOrder = "var/arr var/slice var/concat var/push var/indexOf var/class2type var/toString var/hasOwn var/support core sizzle selector-sizzle selector-native selector traversing/var/rneedsContext core/var/rsingleTag traversing/findFilter core/init traversing var/rnotwhite callbacks deferred core/ready core/access data/accepts data/Data data/var/data_priv data/var/data_user data queue var/pnum css/var/cssExpand css/var/isHidden manipulation/var/rcheckableType manipulation/support var/strundefined event/support event manipulation css/defaultDisplay css/var/rmargin css/var/rnumnonpx css/var/getStyles css/curCSS css/addGetHookIf css/support css/swap css effects/Tween effects queue/delay attributes/support attributes/attr attributes/prop attributes/classes attributes/val attributes event/alias ajax/var/nonce ajax/var/rquery ajax/parseJSON ajax/parseXML ajax manipulation/_evalUrl wrap css/hiddenVisibleSelectors serialize ajax/xhr ajax/script ajax/jsonp core/parseHTML ajax/load event/ajax effects/animatedSelector offset dimensions deprecated exports/amd exports/global jquery".split(' ');
@@ -60,13 +72,20 @@ program
         if (keys.indexOf('+exports/amd') === -1 && keys.indexOf('+exports/global')) {
           keys.push('+exports/global');
         }
-        console.log('grunt build:*' + (keys.length ? ':' + keys.join(':') : '*') + ' && grunt uglify');
+        var buildCmd = 'grunt build:*' + (keys.length ? ':' + keys.join(':') : '*') + ' && grunt uglify';
+        if (options.jquery && options.build) {
+          // console.log('build!');
+        }
+        else {
+          console.log(buildCmd);
+        }
       }
       else {
         console.log('jQuery is not used.');
       }
     }
 
+    // Path is a directory.
     if (env.indexOf('.js') === -1) {
       env = env[env.length - 1] === '/' ? env : env + '/';
       glob("**/*.js", {cwd: env}, function (er, fileList) {
@@ -74,6 +93,7 @@ program
         processFiles(fileList.map(function (file) { return env + file; }));
       });
     }
+    // Path is a single JS file.
     else {
       var singleFile = [env];
       debug(singleFile);
